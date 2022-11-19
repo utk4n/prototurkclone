@@ -12,13 +12,51 @@
 }
 
 :root {
+  --bg-color: #fff;
   --main-color: #32445a;
+  --color-header: #2b3548;
+  --span: rgba(43, 53, 72, 0.5);
+  --color-p: #32445a;
+  --color-prototurk-brand: black;
+  --color-link-list: rgb(51, 51, 51);
+  --bg-theme-switcher: #18191a;
+  --color-theme-switcher: #fff;
+  --links-hover: #f3f6f9;
+  --color-elapsedTime: rgba(17, 17, 17, 0.5);
+  --color-latestUser: #32445a;
+  --color-stats: #23266b;
+  --color-account: rgb(50, 68, 90);
+}
+
+.dark {
+  --bg-color: #18191a;
+  --span: rgba(255, 255, 255, 0.8);
+  --color-p: #ffffffe0;
+  --color-header: #fff;
+  --color-prototurk-brand: #fff;
+  --color-link-list: rgb(255, 255, 255);
+  --bg-theme-switcher: #fff;
+  --color-theme-switcher: #111;
+  --links-hover: rgba(255, 255, 255, 0.04);
+  --color-elapsedTime: #8a9094;
+  --color-latestUser: #2d88ff;
+  --color-stats: #bdc8d4;
+  --color-account: #2d88ff;
+}
+
+html,
+body {
+  height: 100%;
+  max-height: 100%;
+  background-color: var(--bg-color);
 }
 
 body {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
+// DARK & LIGHT RENK PALETİ OLUŞTUR
 
 /* ----- SCROLLBAR ----- */
 

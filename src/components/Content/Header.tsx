@@ -1,13 +1,10 @@
-export const Header = () => {
+import { IProps } from "../../types/HeaderPropTypes";
+
+export const Header: React.FC<IProps> = ({ title, content, className }) => {
   return (
-    <div className="content-header">
-      <h3>Kendine değer kat!</h3>
-      <p>
-        İyi bir kariyer için, doğru bir başlangıç gerekir. Prototürk'de bir çok
-        dil ve teknolojiye ait derslerle doğru bir başlangıç yapmaya hazırsın!
-      </p>
+    <div className={`content-header ${className}`}>
+      <h3>{title}</h3>
+      <p>{content}</p>
     </div>
   );
 };
-
-

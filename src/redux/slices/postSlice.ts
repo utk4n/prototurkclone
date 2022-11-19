@@ -3,7 +3,7 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 import { PostStateType } from "../../types/PostStateType";
 
 const initialState: PostStateType = {
-  id: nanoid(),
+  list: [],
 };
 
 const postSlice = createSlice({

@@ -1,8 +1,18 @@
+import { useEffect } from "react";
 
 const useTheme = () => {
-  return (
-    <button>useTheme</button>
-  )
-}
+  const switchTheme = () => {
+    document.documentElement.classList.toggle("dark");
+    localStorage.setItem("mode", document.documentElement.classList as any);
+  };
 
-export default useTheme
+  useEffect(() => {
+    if (localStorage.getItem("mode")?.includes("dark")) {
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
+
+  return switchTheme;
+};
+
+export default useTheme;
